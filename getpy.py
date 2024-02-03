@@ -75,7 +75,8 @@ class GetEngine(object):
 		if not file:
 			return
 
-		xml_content = open(file, "r").read()
+		# xml_content = open(file, "r").read()
+		xml_content = open(file, "r", encoding="utf-8").read()
 
 		xml_tree = bs(xml_content, features = "xml")
 

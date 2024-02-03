@@ -22,7 +22,8 @@ def process():
 		engine.get_images()
 		pdf = PdfEngine(engine.html_files, engine.css_files,
 						engine.pdf_files, file.directory)
-		pdf.convert()
+		# pdf.convert()
+		pdf.multi_process_convert()
 		pdf.combine()
 		pdf.del_pdf()
 		file.zip_to_epub()

@@ -41,3 +41,8 @@ Run the main.py file, adding the name of the epub file as a commandline argument
 As shown below:
 
 ```python main.py epub-file-name```
+
+**ToDo**
+
+- [x] mutiprocess support
+- [ ] content auto generate
